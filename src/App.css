@@ -172,3 +172,27 @@ body, .app {
   text-align: center;
   font-size: 0.8em;
 }
+
+.empty-searching {
+  margin: auto;
+  text-align: center;
+}
+
+.empty-searching::before {
+  content: '';
+  width: 500px;
+  height: 300px;
+  display: block;
+  margin: 20px auto 0;
+  background: url('./containers/search-book/not-found.gif') no-repeat center;
+}
+
+.empty-shelf {
+  background: url('./components/shelf/empty.gif') no-repeat center;
+  content: '';
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  text-align: center;
+  color: #fff;
+}
