@@ -1,0 +1,137 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders shelf with currentlyReading value 1`] = `
+<select
+  onChange={[Function]}
+  value="currentlyReading"
+>
+  <option
+    disabled={true}
+    value=""
+  >
+    Move to...
+  </option>
+  <option
+    value="currentlyReading"
+  >
+    Currently Reading
+  </option>
+  <option
+    value="wantToRead"
+  >
+    Want to Read
+  </option>
+  <option
+    value="read"
+  >
+    Read
+  </option>
+  <option
+    value="none"
+  >
+    None
+  </option>
+</select>
+`;
+
+exports[`renders shelf with default value 1`] = `
+<select
+  onChange={[Function]}
+  value="none"
+>
+  <option
+    disabled={true}
+    value=""
+  >
+    Move to...
+  </option>
+  <option
+    value="currentlyReading"
+  >
+    Currently Reading
+  </option>
+  <option
+    value="wantToRead"
+  >
+    Want to Read
+  </option>
+  <option
+    value="read"
+  >
+    Read
+  </option>
+  <option
+    value="none"
+  >
+    None
+  </option>
+</select>
+`;
+
+exports[`renders shelf with read value 1`] = `
+<select
+  onChange={[Function]}
+  value="read"
+>
+  <option
+    disabled={true}
+    value=""
+  >
+    Move to...
+  </option>
+  <option
+    value="currentlyReading"
+  >
+    Currently Reading
+  </option>
+  <option
+    value="wantToRead"
+  >
+    Want to Read
+  </option>
+  <option
+    value="read"
+  >
+    Read
+  </option>
+  <option
+    value="none"
+  >
+    None
+  </option>
+</select>
+`;
+
+exports[`renders shelf with wantToRead value 1`] = `
+<select
+  onChange={[Function]}
+  value="wantToRead"
+>
+  <option
+    disabled={true}
+    value=""
+  >
+    Move to...
+  </option>
+  <option
+    value="currentlyReading"
+  >
+    Currently Reading
+  </option>
+  <option
+    value="wantToRead"
+  >
+    Want to Read
+  </option>
+  <option
+    value="read"
+  >
+    Read
+  </option>
+  <option
+    value="none"
+  >
+    None
+  </option>
+</select>
+`;

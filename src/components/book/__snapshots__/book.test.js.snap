@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders book on currentlyReading shelf 1`] = `
+<div
+  className="book"
+>
+  <div
+    className="book-top"
+  >
+    <div
+      className="book-cover"
+      style={
+        Object {
+          "backgroundImage": "url(\\"mockedThumbnail\\")",
+          "height": 193,
+          "width": 128,
+        }
+      }
+    />
+    <div
+      className="book-shelf-changer"
+    >
+      <ShelvesOptions
+        changeShelf={[Function]}
+        currentShelf="currentlyReading"
+        id="test-id"
+      />
+    </div>
+  </div>
+  <div
+    className="book-title"
+  >
+    mockedName
+  </div>
+  <div
+    className="book-authors"
+  >
+    mockedAuthor
+  </div>
+</div>
+`;
+
+exports[`renders book on none shelf 1`] = `
+<div
+  className="book"
+>
+  <div
+    className="book-top"
+  >
+    <div
+      className="book-cover"
+      style={
+        Object {
+          "backgroundImage": "url(\\"mockedThumbnail\\")",
+          "height": 193,
+          "width": 128,
+        }
+      }
+    />
+    <div
+      className="book-shelf-changer"
+    >
+      <ShelvesOptions
+        changeShelf={[Function]}
+        currentShelf="none"
+        id="test-id"
+      />
+    </div>
+  </div>
+  <div
+    className="book-title"
+  >
+    mockedName
+  </div>
+  <div
+    className="book-authors"
+  >
+    mockedAuthor
+  </div>
+</div>
+`;
+
+exports[`renders book on read shelf 1`] = `
+<div
+  className="book"
+>
+  <div
+    className="book-top"
+  >
+    <div
+      className="book-cover"
+      style={
+        Object {
+          "backgroundImage": "url(\\"mockedThumbnail\\")",
+          "height": 193,
+          "width": 128,
+        }
+      }
+    />
+    <div
+      className="book-shelf-changer"
+    >
+      <ShelvesOptions
+        changeShelf={[Function]}
+        currentShelf="read"
+        id="test-id"
+      />
+    </div>
+  </div>
+  <div
+    className="book-title"
+  >
+    mockedName
+  </div>
+  <div
+    className="book-authors"
+  >
+    mockedAuthor
+  </div>
+</div>
+`;
+
+exports[`renders book on wantToRead shelf 1`] = `
+<div
+  className="book"
+>
+  <div
+    className="book-top"
+  >
+    <div
+      className="book-cover"
+      style={
+        Object {
+          "backgroundImage": "url(\\"mockedThumbnail\\")",
+          "height": 193,
+          "width": 128,
+        }
+      }
+    />
+    <div
+      className="book-shelf-changer"
+    >
+      <ShelvesOptions
+        changeShelf={[Function]}
+        currentShelf="wantToRead"
+        id="test-id"
+      />
+    </div>
+  </div>
+  <div
+    className="book-title"
+  >
+    mockedName
+  </div>
+  <div
+    className="book-authors"
+  >
+    mockedAuthor
+  </div>
+</div>
+`;

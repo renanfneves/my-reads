@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders a shelf filled with a book 1`] = `
+<div
+  className="bookshelf"
+>
+  <h2
+    className="bookshelf-title"
+  >
+    mockedTitle
+  </h2>
+  <div
+    className="bookshelf-books"
+  >
+    <ol
+      className="books-grid"
+    >
+      <Book
+        authors={Array []}
+        changeShelf={[Function]}
+        id="mockedId"
+        imageLinks={
+          Object {
+            "smallThumbnail": "mockedLink",
+            "thumbnail": "mockedLink",
+          }
+        }
+        shelf="none"
+        title="mockedTitle"
+      />
+    </ol>
+  </div>
+</div>
+`;
+
+exports[`renders an empty shelf 1`] = `
+<div
+  className="bookshelf"
+>
+  <h2
+    className="bookshelf-title"
+  >
+    mockedTitle
+  </h2>
+  <div
+    className="bookshelf-books"
+  >
+    <div
+      className="empty-shelf"
+    >
+      Empty! You should add some books here.
+    </div>
+    <ol
+      className="books-grid"
+    >
+      
+    </ol>
+  </div>
+</div>
+`;
