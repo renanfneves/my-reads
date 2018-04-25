@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/renanfneves/my-reads.svg?branch=master)](https://travis-ci.org/renanfneves/my-reads)
+
 # my reads
 My Reads is a WebApp to represent books on their respective shelves.
 There are two pages:
