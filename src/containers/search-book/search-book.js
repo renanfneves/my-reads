@@ -66,7 +66,6 @@ class SearchBook extends React.Component {
 
   render() {
     const { query, foundBooks } = this.state;
-    const { update } = this.props;
 
     return (
       <div className="search-books">

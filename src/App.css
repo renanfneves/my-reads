@@ -196,3 +196,12 @@ body, .app {
   text-align: center;
   color: #fff;
 }
+
+.not-match {
+  content: '';
+  width: 500px;
+  height: 500px;
+  margin: auto;
+  display: block;
+  background: url('./components/not-match-page/404.jpg') no-repeat center;
+}

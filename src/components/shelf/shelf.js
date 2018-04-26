@@ -8,7 +8,11 @@ const Shelf = ({ title, books, changeShelf }) => (
   <div className="bookshelf">
     <h2 className="bookshelf-title">{title}</h2>
     <div className="bookshelf-books">
-      { books && !books.length && <div className="empty-shelf">Empty! You should add some books here.</div> }
+      {
+        books && !books.length && <div className="empty-shelf">
+          Empty! You should add some books here.
+        </div>
+      }
       <ol className="books-grid">
         {
           books.map(book =>

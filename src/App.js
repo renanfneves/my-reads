@@ -6,29 +6,26 @@ import './App.css'
 
 import BookList from './containers/book-list';
 import SearchBook from './containers/search-book';
+import NotMatch from './components/not-match-page';
 
-class BooksApp extends React.Component {
-  render() {
-    return (
-      <div className="app">
-      <Route exact path='/' render={({ history }) => (
-          <BookList
-            history={history}
-            getAll={BooksAPI.getAll}
-            update={BooksAPI.update}
-          />
-        )}/>
-        <Route path='/search' render={({ history }) => (
-          <SearchBook
-            history={history}
-            update={(book, shelf) => BooksAPI.update(book, shelf)}
-            search={BooksAPI.search}
-            getAll={BooksAPI.getAll}
-          />
-        )}/>
-      </div>
-    )
-  }
-}
+const BooksApp = () => (
+  <div className="app">
+  <Route exact path='/' render={({ history }) => (
+      <BookList
+        history={history}
+        getAll={BooksAPI.getAll}
+        update={BooksAPI.update}
+      />
+    )}/>
+    <Route path='/search' render={({ history }) => (
+      <SearchBook
+        history={history}
+        update={(book, shelf) => BooksAPI.update(book, shelf)}
+        search={BooksAPI.search}
+        getAll={BooksAPI.getAll}
+      />
+    )}/>
+  </div>
+);
 
-export default BooksApp
+export default BooksApp;

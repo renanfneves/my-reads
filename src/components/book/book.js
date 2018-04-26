@@ -23,7 +23,11 @@ const Book = ({
         backgroundImage: `url("${(imageLinks && imageLinks.thumbnail) || defaultThumbnail}")`
       }} />
       <div className="book-shelf-changer">
-        <ShelvesOptions id={id} currentShelf={shelf} changeShelf={changeShelf} />
+        <ShelvesOptions
+          id={id}
+          currentShelf={shelf}
+          changeShelf={changeShelf}
+        />
       </div>
     </div>
     <div className="book-title">{title}</div>

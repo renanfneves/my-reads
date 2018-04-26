@@ -6,8 +6,14 @@ import Shelf from '../../components/shelf';
 import '../../App.css';
 
 const CURRENTLY_READING = "currentlyReading";
-const WANT_TO_READY = "wantToRead";
+const WANT_TO_READ = "wantToRead";
 const READ = "read";
+
+const SHELVES = [
+  {shelf: CURRENTLY_READING, title: "Currently Reading", },
+  {shelf: WANT_TO_READ, title: "Want to read" },
+  {shelf: READ, title: "Read"},
+];
 
 class BookList extends React.Component {
   constructor(props){
@@ -49,21 +55,15 @@ class BookList extends React.Component {
         </div>
         <div className="list-books-content">
           <div>
-            <Shelf
-              books={books.filter(book => book.shelf === CURRENTLY_READING)}
-              title="Currently Reading"
-              changeShelf={this.changeShelf}
-            />
-            <Shelf
-              books={books.filter(book => book.shelf === WANT_TO_READY)}
-              title="Want to Read"
-              changeShelf={this.changeShelf}
-            />
-            <Shelf
-              books={books.filter(book => book.shelf === READ)}
-              title="Read"
-              changeShelf={this.changeShelf}
-            />
+            {
+              SHELVES.map((_shelf, key) =>
+                <Shelf
+                      key={key}
+                      books={books.filter(book => book.shelf === _shelf.shelf)}
+                      title={_shelf.title}
+                      changeShelf={this.changeShelf} />
+              )
+            }
           </div>
         </div>
         <div className="open-search">
